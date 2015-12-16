@@ -1,0 +1,137 @@
+﻿@import url(normalize.css);
+
+body {
+    background-color: gainsboro;
+    font-family: 'Trebuchet MS', Calibri, Arial;
+    font-size: 17px;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;/*linklerin altındaki çizgiyi sildik.*/
+    color: #555;
+}
+    
+    a:hover {
+        color: #999;
+}
+
+#wrapper {
+     width: 960px;
+     height: auto;
+     margin: 0 auto;/*yatayda hizaladık div i*/
+     background-color: #0099CC;
+}
+
+header {
+    width: 960px;
+    height: 45px;
+    float: left;
+    background-color: #fff;
+}
+
+    header .logo {
+        width: 129px;
+        border-right: 1px solid #ff0000;
+        height: 45px;
+        float: left;
+        line-height: 45px;
+        text-align: center;
+        color: #990000;
+        
+    }
+
+    header nav {
+        width: 730px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        float: left;
+    }
+
+        header nav ul {
+            list-style: none;
+        }
+
+            header nav ul li {
+                float: left;
+                margin-left: 15px;/*linkler arasına 15 px boşluk verdik*/
+                color: #555;
+            }
+
+.banner {
+    width: 960px;
+    height: 300px;
+    margin-top: 15px;/*yukarıdan boşluk verdik.*/
+    float: left;
+    background-image: url(/Content/img/cars.jpg);
+    background-size: cover;
+   
+}
+
+.sol-taraf {
+    width: 300px;
+    height: 500px;
+    float: left;
+    margin-top: 15px; /*yukarıdan bu kadar boşluk verdik*/
+   
+}
+
+    .sol-taraf .kullanici-giris {
+        width: 300px;
+        height: auto;
+        float: left;
+       
+    }
+
+        .sol-taraf .kullanici-giris .ust {
+            width: 285px;
+            height: 45px;
+            line-height: 45px;
+            padding-left: 15px;
+            float: left;
+            color: #fff;
+            background-color: #0099CC;
+        }
+
+        .sol-taraf .kullanici-giris .alt {
+            width: 270px;
+            padding: 15px;
+            height: 220px;
+            float: left;
+            border-bottom: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+            .sol-taraf .kullanici-giris .alt .textbox {
+                width: 248px;
+                height: 38px;
+                border: 1px solid #000000;
+            }
+
+.icerik {
+    width: 645px;
+    height: 500px;
+    float: right;
+    margin-top: 15px; /*yukarıdan bu kadar boşluk verdik*/
+    background-color: #fff;
+
+}
+
+footer {
+    width: 960px;
+    height: 45px;
+    line-height: 60px;
+    text-align: center;
+    color: #555;
+    float: left;
+    margin-top: 15px;/*yukarıdan bu kadar boşluk verdik*/
+    font-family: Calibri;
+    background-color: #fff;
+}
+
