@@ -1,0 +1,42 @@
+﻿@model List<RentACarProject.Models.Araclar>
+
+@{
+    ViewBag.Title = "Araç Listele";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/css/style.css" rel="stylesheet" />
+
+<div class="btn-aracYonlen">
+    <a href="/Araclar">Araç Ekle</a>
+</div>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table border="1" cellpadding="2" cellspacing="2" style="border: 2px solid #ccc;">
+    <tr>
+        <th>Marka</th>
+        <th>Model</th>
+        <th>Yakıt Tipi</th>
+        <th>Renk</th>
+        <th>Vites Tipi</th>
+        <th>Yönet</th>
+    </tr>
+    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr></tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>@item.aracMarka</td>
+        <td>@item.aracModel</td>
+        <td>@item.aracYakitTipi</td>
+        <td>@item.aracRenk</td>
+        <td>@item.aracVitesTipi</td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

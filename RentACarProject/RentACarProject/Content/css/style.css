@@ -131,8 +131,56 @@ header {
                 color: #fff;
                 margin-top: 10px;
                 background-color: #0099CC;
+                border-radius: 5px;
             }
-           
+
+/*Rezervasyon Ekranı*/
+.rezeryasyon-ekranı {
+        width: 300px;
+        height: auto;
+        float: left;
+        
+    }
+
+        .rezeryasyon-ekranı .ust {
+            width: 285px;
+            height: 45px;
+            line-height: 45px;
+            padding-left: 15px;
+            float: left;
+            color: #fff;
+            margin-top: 20px;
+            background-color: #0099CC;
+        }
+
+        .rezeryasyon-ekranı .alt {
+            width: 268px;
+            padding: 15px;
+            height: 177px;
+            float: left;
+            color: #555;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+            .rezeryasyon-ekranı .alt .textbox {
+                 width: 248px;
+                 height: 30px;
+                 border: 1px solid #ccc;
+            }
+
+            .rezeryasyon-ekranı .alt .btnStyle {
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #fff;
+                margin-top: 10px;
+                background-color: #0099CC;
+                border-radius: 5px;
+            }
 /* üyelik ekranı*/
 
 .uyelik-ekrani {
@@ -179,7 +227,68 @@ header {
                 color: #fff;
                 margin-top: 10px;
                 background-color: #0099CC;
+                border-radius: 5px;
             }
+
+/*Araç ekleme ekranı*/
+
+.arac-ekrani {
+        width: 300px;
+        height: auto;
+        float: left;
+        
+    }
+
+        .arac-ekrani .ust {
+            width: 285px;
+            height: 45px;
+            line-height: 45px;
+            padding-left: 15px;
+            float: left;
+            color: #fff;
+            margin-top: 20px;
+            background-color: #0099CC;
+        }
+
+        .arac-ekrani .alt {
+            width: 268px;
+            padding: 15px;
+            height: 300px;
+            float: left;
+            color: #555;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+            .arac-ekrani .alt .textbox {
+                 width: 248px;
+                 height: 30px;
+                 border: 1px solid #ccc;
+            }
+
+            .arac-ekrani .alt .btnStyle {
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #fff;
+                margin-top: 10px;
+                background-color: #0099CC;
+                border-radius: 5px;
+            }
+
+.btn-aracYonlen {
+     width: 100px;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     color: #fff;
+     margin-top: 10px;
+     background-color: #0099CC;
+     border-radius: 5px;
+}
 
 .icerik {
     width: 645px;

@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Araçlar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div style="width: 285px; margin: 0 auto;">
+
+    <div class="arac-ekrani">
+        <div class="ust">
+            Araç Ekleme Ekranı
+        </div>
+        <div class="alt">
+            <form action="/Araclar/Index" method="post">
+
+                <label>Marka</label>
+                <input type="text" name="marka" class="textbox" />
+
+                <label>Model</label>
+                <input type="text" name="model" class="textbox" />
+
+                <label>Yakıt Tipi</label>
+                <input type="text" name="yakitTipi" class="textbox" />
+
+                <label>Renk</label>
+                <input type="text" name="renk" class="textbox" />
+
+                <label>Vites Tipi</label>
+                <input type="text" name="vitesTipi" class="textbox" />
+                <br />
+                <input type="submit" value="Kaydet" class="btnStyle">
+            </form>
+        </div>
+    </div>
+</div>
