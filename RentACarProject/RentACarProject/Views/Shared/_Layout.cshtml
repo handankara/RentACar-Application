@@ -7,12 +7,12 @@
     <meta name="keywords" content="" />
     <title>@ViewBag.Title</title>
     <link href="~/Content/css/style.css" rel="stylesheet" />
-
- 
 </head>
 <body>
   <div id="wrapper">
+
       <header>
+
           <div class="logo">
               RENT A CAR
           </div>
@@ -31,8 +31,12 @@
                   <li>
                      <a href="#">İletişim</a>
                   </li>
+                  <li class="uyeOl">
+                      <a href="/UyelikEkrani">Üye Ol</a>
+                  </li>
               </ul>
           </nav>
+
       </header>
 
       <div class="banner">
@@ -40,12 +44,26 @@
       </div>
 
       <div class="sol-taraf">
-          <div class="kullanici-giris">
+
+          <div class="login-giris">
+
               <div class="ust">
                   Login Ekranı
               </div>
+
               <div class="alt">
-                  
+
+                  <form action="" method="post">
+
+                      <label>Email</label>
+                      <input type="text" name="email" class="textbox" />
+
+                      <label>Şifre</label>
+                      <input type="text" name="sifre" class="textbox" />
+                      <br />
+                      <input type="submit" value="Giriş" class="btnStyle">
+                  </form>
+
               </div>
           </div>
       </div>

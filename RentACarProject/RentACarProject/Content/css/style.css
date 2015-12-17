@@ -14,12 +14,13 @@ body {
 
 a {
     text-decoration: none;/*linklerin altındaki çizgiyi sildik.*/
-    color: #555;
+    color: #fff;
 }
     
     a:hover {
-        color: #999;
-}
+        color: #21353c;
+        cursor: pointer;
+    }
 
 #wrapper {
      width: 960px;
@@ -37,21 +38,22 @@ header {
 
     header .logo {
         width: 129px;
-        border-right: 1px solid #ff0000;
+        border-right: 1px solid #0099CC;
         height: 45px;
         float: left;
         line-height: 45px;
         text-align: center;
-        color: #990000;
+        color: #0099CC;
         
     }
 
     header nav {
-        width: 730px;
+        width: 830px;
         height: 45px;
         line-height: 45px;
         text-align: center;
         float: left;
+        background-color: #0099CC;
     }
 
         header nav ul {
@@ -60,9 +62,13 @@ header {
 
             header nav ul li {
                 float: left;
-                margin-left: 15px;/*linkler arasına 15 px boşluk verdik*/
-                color: #555;
+                margin-left: 15px;/*linkler arasına 15login-girispx boşluk verdik*/
+                color: #fff;
             }
+
+                header nav ul li.uyeOl {
+                    margin-left: 460px;
+                }
 
 .banner {
     width: 960px;
@@ -73,7 +79,7 @@ header {
     background-size: cover;
    
 }
-
+/*login ekranı*/
 .sol-taraf {
     width: 300px;
     height: 500px;
@@ -82,14 +88,14 @@ header {
    
 }
 
-    .sol-taraf .kullanici-giris {
+    .sol-taraf .login-giris {
         width: 300px;
         height: auto;
         float: left;
        
     }
 
-        .sol-taraf .kullanici-giris .ust {
+        .sol-taraf .login-giris .ust {
             width: 285px;
             height: 45px;
             line-height: 45px;
@@ -99,19 +105,80 @@ header {
             background-color: #0099CC;
         }
 
-        .sol-taraf .kullanici-giris .alt {
-            width: 270px;
+        .sol-taraf .login-giris .alt {
+            width: 268px;
             padding: 15px;
-            height: 220px;
+            height: 150px;
             float: left;
-            border-bottom: 1px solid #ccc;
+            color: #555;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: 1px solid #ccc;
             background-color: #fff;
         }
 
-            .sol-taraf .kullanici-giris .alt .textbox {
-                width: 248px;
-                height: 38px;
-                border: 1px solid #000000;
+            .sol-taraf .login-giris .alt .textbox {
+                 width: 248px;
+                 height: 30px;
+                 border: 1px solid #ccc;
+            }
+
+            .sol-taraf .login-giris .alt .btnStyle {
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #fff;
+                margin-top: 10px;
+                background-color: #0099CC;
+            }
+           
+/* üyelik ekranı*/
+
+.uyelik-ekrani {
+        width: 300px;
+        height: auto;
+        float: left;
+        
+    }
+
+        .uyelik-ekrani .ust {
+            width: 285px;
+            height: 45px;
+            line-height: 45px;
+            padding-left: 15px;
+            float: left;
+            color: #fff;
+            margin-top: 20px;
+            background-color: #0099CC;
+        }
+
+        .uyelik-ekrani .alt {
+            width: 268px;
+            padding: 15px;
+            height: 250px;
+            float: left;
+            color: #555;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+            .uyelik-ekrani .alt .textbox {
+                 width: 248px;
+                 height: 30px;
+                 border: 1px solid #ccc;
+            }
+
+            .uyelik-ekrani .alt .btnStyle {
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #fff;
+                margin-top: 10px;
+                background-color: #0099CC;
             }
 
 .icerik {

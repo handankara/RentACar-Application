@@ -24,3 +24,7 @@ C:\Users\handan\Documents\GitHub\RentACar-Application\RentACarProject\RentACarPr
 C:\Users\handan\Documents\GitHub\RentACar-Application\RentACarProject\RentACarProject\obj\Debug\RentACarProject.csprojResolveAssemblyReference.cache
 C:\Users\handan\Documents\GitHub\RentACar-Application\RentACarProject\RentACarProject\obj\Debug\RentACarProject.dll
 C:\Users\handan\Documents\GitHub\RentACar-Application\RentACarProject\RentACarProject\obj\Debug\RentACarProject.pdb
+C:\Users\handan\Documents\GitHub\RentACar-Application\RentACarProject\RentACarProject\bin\EntityFramework.dll
+C:\Users\handan\Documents\GitHub\RentACar-Application\RentACarProject\RentACarProject\bin\EntityFramework.SqlServer.dll
+C:\Users\handan\Documents\GitHub\RentACar-Application\RentACarProject\RentACarProject\bin\EntityFramework.xml
+C:\Users\handan\Documents\GitHub\RentACar-Application\RentACarProject\RentACarProject\bin\EntityFramework.SqlServer.xml
