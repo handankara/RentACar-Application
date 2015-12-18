@@ -22,21 +22,22 @@
         <th>Vites Tipi</th>
         <th>Yönet</th>
     </tr>
-    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-    <tr></tr>
-@foreach (var item in Model) {
-    <tr>
-        <td>@item.aracMarka</td>
-        <td>@item.aracModel</td>
-        <td>@item.aracYakitTipi</td>
-        <td>@item.aracRenk</td>
-        <td>@item.aracVitesTipi</td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
-    </tr>
-}
+    <!-- <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>-->
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.aracMarka</td>
+            <td>@item.aracModel</td>
+            <td>@item.aracYakitTipi</td>
+            <td>@item.aracRenk</td>
+            <td>@item.aracVitesTipi</td>
+            <td>
+                
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }) 
+            </td>
+        </tr>
+    }
 
 </table>

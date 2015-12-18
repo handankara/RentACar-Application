@@ -126,6 +126,7 @@
     <Compile Include="Controllers\AracListeleController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SharedController.cs" />
+    <Compile Include="Controllers\SubelerController.cs" />
     <Compile Include="Controllers\UyelikEkraniController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -168,6 +169,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\css\normalize.css" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\img\araba-arka.jpg" />
+    <Content Include="Content\img\araba-on.jpg" />
     <Content Include="Content\img\araclar.Jpeg" />
     <Content Include="Content\img\cars.jpg" />
     <Content Include="Content\img\kirmizi-arac.jpg" />
@@ -228,6 +231,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\AracListele\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Subeler\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

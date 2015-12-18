@@ -1,0 +1,25 @@
+﻿@model List<RentACarProject.Models.Subeler>
+<link href="~/Content/css/style.css" rel="stylesheet" />
+
+@{
+    ViewBag.Title = "Şubeler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<table border="1" cellpadding="2" cellspacing="2" style="border: 2px solid #ccc; margin-top: 40px;">
+    <tr>
+        <th>Şube Adı</th>
+        <th>Şube Adresi</th>
+        <th>Telefon</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>@item.subeAdi</td>
+        <td>@item.subeAdres</td>
+        <td>@item.subeTelefon</td>
+    </tr>
+}
+
+</table>
