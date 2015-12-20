@@ -124,6 +124,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AraclarController.cs" />
     <Compile Include="Controllers\AracListeleController.cs" />
+    <Compile Include="Controllers\FilterAndListController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SharedController.cs" />
     <Compile Include="Controllers\SubelerController.cs" />
@@ -234,6 +235,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Subeler\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\FilterAndList\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

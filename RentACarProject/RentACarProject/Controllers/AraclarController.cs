@@ -33,8 +33,9 @@ namespace RentACarProject.Controllers
             db.Araclar.Add(arac);
             db.SaveChanges();
 
-            Response.Redirect("/AracListele/Index.cshtml");
-
+          
+            //return RedirectToAction("Action_Name", "Controller_Name");
+            RedirectToAction("Index", "AracListele");
             return View();
            
          }

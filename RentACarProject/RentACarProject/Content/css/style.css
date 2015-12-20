@@ -14,9 +14,12 @@ body {
 
 a {
     text-decoration: none;/*linklerin altındaki çizgiyi sildik.*/
-    color: #fff;
+    color: #0099CC;
 }
 
+    a:hover {
+        color: #10d4ef;
+    }
 .link-style:hover {
         background-color: #10b7ef;
         width: 75px;
@@ -135,6 +138,10 @@ header {
                 border-radius: 5px;
             }
 
+                .sol-taraf .login-giris .alt .btnStyle:hover {
+                    background-color: #10d4ef;
+                 }
+
 /*Rezervasyon Ekranı*/
 .rezeryasyon-ekranı {
         width: 300px;
@@ -182,6 +189,10 @@ header {
                 background-color: #0099CC;
                 border-radius: 5px;
             }
+
+                 .rezeryasyon-ekranı .alt .btnStyle:hover {
+                    background-color: #10d4ef;
+                 }
 /* üyelik ekranı*/
 
 .uyelik-ekrani {
@@ -231,6 +242,10 @@ header {
                 border-radius: 5px;
             }
 
+                .uyelik-ekrani .alt .btnStyle:hover {
+                    background-color: #10d4ef;
+                 }
+
 /*Araç ekleme ekranı*/
 
 .arac-ekrani {
@@ -279,6 +294,10 @@ header {
                 background-color: #0099CC;
                 border-radius: 5px;
             }
+                
+                .arac-ekrani .alt .btnStyle:hover {
+                    background-color: #10d4ef;
+                 } 
 /*araç ekleme ekranına yönlendir*/
 .btn-aracYonlen {
      width: 100px;
@@ -288,17 +307,18 @@ header {
      color: #fff;
      margin-top: 10px 0px 0px 10px;
      border-radius: 5px;
-     background-color: #32cd32;
+     background-color: #b22222;
      
 }
 
     .btn-aracYonlen:hover {
    
-        background-color: #7cfc00;
+        background-color: #ee2c2c;
     }
 /*listeleme tablosu*/
 table {
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 tr {
@@ -315,7 +335,7 @@ tr {
         padding: 5px;
         color: #fff;
         font-size: 16px;
-        background-color: #32cd32;
+        background-color: #b22222;
         
     }
 
@@ -324,15 +344,33 @@ tr {
         margin: 8px;
     }
 
+/*araç arama butonu*/
+.btn-arama {
+    width: 100px;
+     height: 30px;
+     line-height: 30px;
+     text-align: center;
+     color: #fff;
+     font-size: 16px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin-top: 10px 0px 0px 10px;
+     border-radius: 5px;
+     background-color: #b22222;
+     
+}
+
+    .btn-arama:hover {
+   
+        background-color: #ee2c2c;
+    }
+
 .icerik {
     width: 650px;
     height: 500px;
     float: right;
     margin-top: 15px; /*yukarıdan bu kadar boşluk verdik*/
     background-color: #fff;
-    
-    
-    /*overflow-y: scroll;/*sayfa uzunsa kaydırma çubuğu çıkması için kullanılır.*/ 
+    overflow-y: scroll;/*sayfa uzunsa kaydırma çubuğu çıkması için kullanılır.*/ 
 }
 
 p {

@@ -6,38 +6,37 @@
 }
 <link href="~/Content/css/style.css" rel="stylesheet" />
 
-<div class="btn-aracYonlen">
-    <a href="/Araclar">Araç Ekle</a>
-</div>
+<a href="/Araclar">
+    <div class="btn-aracYonlen">
+        <span>Araç Ekle</span> 
+    </div>
+</a>
+
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table border="1" cellpadding="2" cellspacing="2" style="border: 2px solid #ccc;">
-    <tr>
-        <th>Marka</th>
-        <th>Model</th>
-        <th>Yakıt Tipi</th>
-        <th>Renk</th>
-        <th>Vites Tipi</th>
-        <th>Yönet</th>
-    </tr>
-    <!-- <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>-->
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.aracMarka</td>
-            <td>@item.aracModel</td>
-            <td>@item.aracYakitTipi</td>
-            <td>@item.aracRenk</td>
-            <td>@item.aracVitesTipi</td>
-            <td>
-                
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }) 
-            </td>
-        </tr>
-    }
 
-</table>
+    <table border="1" cellpadding="2" cellspacing="2" style="border: 2px solid #ccc; overflow-y: scroll">
+        <tr>
+            <th>ID</th>
+            <th>Marka</th>
+            <th>Model</th>
+            <th>Yakıt Tipi</th>
+            <th>Renk</th>
+            <th>Vites Tipi</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.aracID</td>
+                <td>@item.aracMarka</td>
+                <td>@item.aracModel</td>
+                <td>@item.aracYakitTipi</td>
+                <td>@item.aracRenk</td>
+                <td>@item.aracVitesTipi</td>
+            </tr>
+        }
+
+    </table>
+
