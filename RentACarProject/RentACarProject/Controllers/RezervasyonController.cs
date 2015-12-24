@@ -19,12 +19,12 @@ namespace RentACarProject.Controllers
         }
 
         [HttpPost]
-        public ActionResult Yeni(ViewModel.RezervasyonVM model/*, int aracId*/)//veritabanına kayıt işlemi
+        public ActionResult Yeni(ViewModel.RezervasyonVM model)//veritabanına kayıt işlemi
         {
             model.Rec.uyeID = Convert.ToInt32(Session["sessionUyeID"]);//Sessiondan aldık. 
             model.Rec.aracID = Convert.ToInt32(Session["sessionAracID"]);//Sessiondan aldık. 
 
-            RentACarDBEntities db = new RentACarDBEntities();//tarih,saat değerlerini Yeni actiondan alıyoruz.
+            RentACarDBEntities db = new RentACarDBEntities();//tarih,saat değerlerini Yeni View dan alıyoruz.
             db.Rezervasyonlar.Add(model.Rec);
             db.SaveChanges();
 
@@ -42,7 +42,7 @@ namespace RentACarProject.Controllers
             model.Rec = new Models.Rezervasyonlar();
 
             model.Rec.rezTarih = DateTime.Today;
-            //model.Rec.rezSaat = StartDate;
+            //model.Rec.rezSaat = DateTime.Now;
             //model.Rec.aracID = aracId;
 
             RentACarDBEntities db = new RentACarDBEntities();
