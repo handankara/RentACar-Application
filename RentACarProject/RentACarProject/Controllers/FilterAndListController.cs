@@ -48,5 +48,7 @@ namespace RentACarProject.Controllers
            }
            return View(araclar.ToList());
        }
+
      }
+
 }

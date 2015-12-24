@@ -6,21 +6,22 @@
 
 <link href="~/Content/css/style.css" rel="stylesheet" />
 
+
     @using (Html.BeginForm())
     {
-        <div style="background-color: #ccc;">
+       
             <p style="background-color: #ccc;">
-
                 Filtre: Araç Marka, Model, Yakı Tipi: @Html.TextBox("SearchString")
                 <input type="submit" value="Arama" class="btn-arama" />
             </p>
-        </div>
+        
     }
 
     <br />
     <br />
-    <table border="1" cellpadding="2" cellspacing="2" style="border: 2px solid #ccc; overflow-y: scroll">
+    <table border="1" cellpadding="2" cellspacing="2" style="border: 2px solid #ccc;">
         <tr>
+            <th>Araç Id</th>
             <th>
                 @Html.ActionLink("Marka", "Index", new { sortOrder = ViewBag.MarkaSortParm })
             </th>
@@ -38,13 +39,14 @@
         @foreach (var item in Model)
         {
             <tr>
+                <td>@item.aracID</td>
                 <td>@item.aracMarka</td>
                 <td>@item.aracModel</td>
                 <td>@item.aracYakitTipi</td>
                 <td>@item.aracRenk</td>
                 <td>@item.aracVitesTipi</td>
                 <td>
-                    /  @Html.ActionLink("Rezervasyon", "Rezervasyon", new { /* id=item.PrimaryKey */ })
+                        /  @Html.ActionLink("Rezervasyon", "Yeni", "Rezervasyon", new { aracId = item.aracID }, new { @id = "txtaracid", @style = "color: #0099CC; text-decoration: solid;" })
                 </td>
             </tr>
         }

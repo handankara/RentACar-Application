@@ -9,12 +9,11 @@ namespace RentACarProject.Controllers
     public class SharedController : Controller
     {
         //
-        // GET: /Shared/
-
+   
         public ActionResult _Layout()
         {
             return View();
         }
-
+     
     }
 }

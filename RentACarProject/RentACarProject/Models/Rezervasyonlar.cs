@@ -17,6 +17,8 @@ namespace RentACarProject.Models
         public int rezID { get; set; }
         public Nullable<System.DateTime> rezTarih { get; set; }
         public Nullable<System.TimeSpan> rezSaat { get; set; }
+        public Nullable<System.DateTime> rezTeslimTarih { get; set; }
+        public Nullable<System.TimeSpan> rezTeslimSaat { get; set; }
         public Nullable<int> uyeID { get; set; }
         public Nullable<int> aracID { get; set; }
     

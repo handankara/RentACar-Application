@@ -14,20 +14,18 @@ body {
 
 a {
     text-decoration: none;/*linklerin altındaki çizgiyi sildik.*/
-    color: #0099CC;
+    color: #fff;
 }
 
-    a:hover {
-        color: #10d4ef;
-    }
 .link-style:hover {
         background-color: #10b7ef;
-        width: 75px;
+        width: 110px;
         height: 35px;
         line-height: 35px;
+        text-align: center;
         border-radius: 5px;
         cursor: pointer;
-        text-align: center;
+        
 }
     
 #wrapper {
@@ -92,14 +90,13 @@ header {
    
 }
 
-    .sol-taraf .login-giris {
+.login-giris {
         width: 300px;
         height: auto;
         float: left;
        
     }
-
-        .sol-taraf .login-giris .ust {
+    .login-giris .ust {
             width: 285px;
             height: 45px;
             line-height: 45px;
@@ -109,7 +106,7 @@ header {
             background-color: #0099CC;
         }
 
-        .sol-taraf .login-giris .alt {
+        .login-giris .alt {
             width: 268px;
             padding: 15px;
             height: 150px;
@@ -121,13 +118,13 @@ header {
             background-color: #fff;
         }
 
-            .sol-taraf .login-giris .alt .textbox {
+            .login-giris .alt .textbox {
                  width: 248px;
                  height: 30px;
                  border: 1px solid #ccc;
             }
 
-            .sol-taraf .login-giris .alt .btnStyle {
+            .login-giris .alt .btnStyle {
                 width: 100px;
                 height: 40px;
                 line-height: 40px;
@@ -138,61 +135,99 @@ header {
                 border-radius: 5px;
             }
 
-                .sol-taraf .login-giris .alt .btnStyle:hover {
+                .login-giris .alt .btnStyle:hover {
                     background-color: #10d4ef;
                  }
 
 /*Rezervasyon Ekranı*/
-.rezeryasyon-ekranı {
-        width: 300px;
-        height: auto;
+.arac-ozellikleri {
+        width: 210px;
+        height: 200px;
+      /* padding: 20px;*/ 
+        color: #555;
         float: left;
-        
+        margin: 20px;
+        color: #555;
+        font-size: 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 1px solid #ccc;
+        background-color: #fff;
     }
 
-        .rezeryasyon-ekranı .ust {
-            width: 285px;
-            height: 45px;
-            line-height: 45px;
-            padding-left: 15px;
-            float: left;
-            color: #fff;
-            margin-top: 20px;
-            background-color: #0099CC;
-        }
-
-        .rezeryasyon-ekranı .alt {
-            width: 268px;
-            padding: 15px;
-            height: 177px;
-            float: left;
-            color: #555;
-            font-size: 16px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            border: 1px solid #ccc;
-            background-color: #fff;
-        }
-
-            .rezeryasyon-ekranı .alt .textbox {
-                 width: 248px;
-                 height: 30px;
-                 border: 1px solid #ccc;
+     .arac-ozellikleri .ust {
+               width: 195px;
+               height: 45px;
+               line-height: 45px;
+               font-family: Center;
+               padding-left: 15px;
+               float: left;
+               color: #fff;
+               font-size: 16px;
+               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               background-color: #0099CC;
             }
 
-            .rezeryasyon-ekranı .alt .btnStyle {
-                width: 100px;
-                height: 40px;
-                line-height: 40px;
-                text-align: center;
+     .arac-ozellikleri .alt {
+         width: 195px;
+         height: 140px;
+         padding: 15px;
+         padding-top: 30px;
+
+     }
+
+    .rezeryasyon-ekranı {
+            width: 300px;
+            height: auto;
+            float: left;
+           /* margin: 15px;*/
+        
+        }
+
+            .rezeryasyon-ekranı .ust {
+                width: 285px;
+                height: 45px;
+                line-height: 45px;
+                padding-left: 15px;
+                float: left;
                 color: #fff;
-                margin-top: 10px;
+                margin-top: 20px;
                 background-color: #0099CC;
-                border-radius: 5px;
             }
 
-                 .rezeryasyon-ekranı .alt .btnStyle:hover {
-                    background-color: #10d4ef;
-                 }
+            .rezeryasyon-ekranı .alt {
+                width: 268px;
+                padding: 15px;
+                height: 250px;
+                float: left;
+                color: #555;
+                font-size: 16px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border: 1px solid #ccc;
+                background-color: #fff;
+            }
+
+                .rezeryasyon-ekranı .alt .textbox {
+                     width: 248px;
+                     height: 30px;
+                     border: 1px solid #ccc;
+                }
+
+                .rezeryasyon-ekranı .alt .btnStyle {
+                    width: 100px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #fff;
+                    margin-top: 10px;
+                    background-color: #0099CC;
+                    border-radius: 5px;
+                }
+
+                    .rezeryasyon-ekranı .alt .btnStyle:hover {
+                        background-color: #10d4ef;
+                     }
+
+
 /* üyelik ekranı*/
 
 .uyelik-ekrani {

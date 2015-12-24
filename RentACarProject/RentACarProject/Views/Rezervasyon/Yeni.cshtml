@@ -1,0 +1,54 @@
+﻿@model RentACarProject.ViewModel.RezervasyonVM
+
+@{
+    ViewBag.Title = "Yeni";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/css/style.css" rel="stylesheet" />
+
+<div style="background-color: #fff;">
+    
+    <div class="arac-ozellikleri">
+
+        <div class="ust">
+            Araç Özellikleri
+        </div>
+
+        <div class="alt">
+            Marka: @Model.AracMarka
+            <br />
+            Model: @Model.AracModel
+            <br />
+            Yakıt Tipi: @Model.YakıtTipi
+            <br />
+            Vites Tipi: @Model.AracVitesTipi
+        </div>
+
+    </div>
+
+    <div class="rezeryasyon-ekranı">
+
+        <div class="ust">
+            Rezervasyon Ekranı
+        </div>
+
+        <div class="alt">
+            @using (@Html.BeginForm("Yeni", "Rezervasyon", FormMethod.Post))
+            {
+                @Html.LabelFor(c => c.Rec.rezTarih)
+                @Html.TextBoxFor(c => c.Rec.rezTarih, new { @id = "txtRezTarih", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+
+                @Html.LabelFor(c => c.Rec.rezSaat)
+                @Html.TextBoxFor(c => c.Rec.rezSaat, new { @id = "txtRezSaat", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+
+                @Html.LabelFor(c => c.Rec.rezTeslimTarih)
+                @Html.TextBoxFor(c => c.Rec.rezTeslimTarih, new { @id = "txtRezTeslimTarih", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+
+                @Html.LabelFor(c => c.Rec.rezTeslimSaat)
+                @Html.TextBoxFor(c => c.Rec.rezTeslimSaat, new { @id = "txtTeslimSaat", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+                <br />
+                <input type="submit" value="Kaydet" class="btnStyle" />
+            }
+        </div>
+    </div>
+</div>

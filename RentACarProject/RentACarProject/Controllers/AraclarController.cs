@@ -35,8 +35,8 @@ namespace RentACarProject.Controllers
 
           
             //return RedirectToAction("Action_Name", "Controller_Name");
-            RedirectToAction("Index", "AracListele");
-            return View();
+            return RedirectToAction("Index", "AracListele");
+           
            
          }
 
