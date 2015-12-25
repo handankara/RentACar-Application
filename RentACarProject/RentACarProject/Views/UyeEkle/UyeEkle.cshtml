@@ -1,0 +1,52 @@
+﻿@model RentACarProject.Models.Uyeler
+
+@{
+    ViewBag.Title = "UyeEkle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/css/style.css" rel="stylesheet" />
+
+    <div style="width: 285px; margin: 0 auto;">
+
+        <div class="uyelik-ekrani">
+
+            <div class="ust">
+                Üyelik Ekranı
+            </div>
+
+            <div class="alt">
+
+                @using (@Html.BeginForm("UyeEkle", "UyeEkle", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true)
+
+                    if (@ViewBag.Message != null)
+                    {
+                        <div style="border: 1px solid red;">
+                            @ViewBag.Message
+                        </div>
+                    }
+                    @Html.LabelFor(a => a.uyeAd)
+                    @Html.TextBoxFor(a => a.uyeAd, new { @id = "txtUyeAd", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+                    @Html.ValidationMessageFor(a => a.uyeAd)
+                    <br />
+                    @Html.LabelFor(a => a.uyeSoyad)
+                    @Html.TextBoxFor(a => a.uyeSoyad, new { @id = "txtUyeSoyad", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+                    @Html.ValidationMessageFor(a => a.uyeSoyad)
+                    <br />
+                    @Html.LabelFor(a => a.uyeEmail)
+                    @Html.TextBoxFor(a => a.uyeEmail, new { @id = "txtUyeEmail", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+                    @Html.ValidationMessageFor(a => a.uyeEmail)
+                    <br />
+                    @Html.LabelFor(a => a.uyeSifre)
+                    @Html.PasswordFor(a => a.uyeSifre, new { @id = "txtUyeSifre", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+                    @Html.ValidationMessageFor(a => a.uyeSifre)
+                    <br />
+                    <input type="submit" value="Kaydet" class="btnStyle">
+                }
+
+            </div>
+        </div>
+    </div>
+

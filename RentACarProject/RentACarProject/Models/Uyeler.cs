@@ -11,7 +11,8 @@ namespace RentACarProject.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations;//validation iþlemleri için eklendi.
+
     public partial class Uyeler
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -21,9 +22,21 @@ namespace RentACarProject.Models
         }
     
         public int uyeID { get; set; }
+
+        [Required(ErrorMessage = "Lütfen üye adýný giriniz.")] //gerekli kýsým
+        [Display(Name = "Adý")]//Bu ekranda görünen isim
         public string uyeAd { get; set; }
+
+        [Required(ErrorMessage = "Lütfen üye sayadýný giriniz.")] //gerekli kýsým
+        [Display(Name = "Sayadý")]//Bu ekranda görünen isim
         public string uyeSoyad { get; set; }
+
+        [Required(ErrorMessage = "Lütfen üye mail adresini giriniz.")] //gerekli kýsým
+        [Display(Name = "Email")]//Bu ekranda görünen isim
         public string uyeEmail { get; set; }
+
+        [Required(ErrorMessage = "Lütfen üye þifresini giriniz.")] //gerekli kýsým
+        [Display(Name = "Þifre")]//Bu ekranda görünen isim
         public string uyeSifre { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -1,0 +1,64 @@
+﻿@model RentACarProject.Models.Araclar
+
+@{
+    ViewBag.Title = "AracEkle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="width: 285px; margin: 0 auto;">
+
+    <div class="arac-ekrani">
+        <div class="ust">
+            Araç Ekleme Ekranı
+        </div>
+        <div class="alt">
+            @using (@Html.BeginForm("AracEkle", "AracEkle", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+
+                @Html.DropDownListFor(a => a.aracMarka, new List<SelectListItem> {new SelectListItem { Text = "Hyundai"},
+                new SelectListItem { Text = "Nissan"}, new SelectListItem { Text = "Ford"},
+                new SelectListItem { Text = "Fiat"}, new SelectListItem { Text = "Renault"},
+                new SelectListItem { Text = "Toyota"}, new SelectListItem { Text = "Mercedes"},
+                new SelectListItem { Text = "Renova"}, new SelectListItem { Text = "Honda"}}, "Marka Seçiniz",
+                new { @id = "txtAracMarka", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+                @Html.ValidationMessageFor(a => a.aracMarka)
+                <br />
+                <br />
+                @Html.DropDownListFor(a => a.aracModel, new List<SelectListItem> {new SelectListItem { Text = "Benz Siyah"},
+                new SelectListItem { Text = "350 Z"}, new SelectListItem { Text = "Volks wagen"},
+                new SelectListItem { Text = "SantaFe"}, new SelectListItem { Text = "S 8 2006"},
+                new SelectListItem { Text = "üstü açık"}, new SelectListItem { Text = "Grand Vitara "},
+                new SelectListItem { Text = "civic spor"}}, "Model Seçiniz",
+                new { @id = "txtAracModel", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+                @Html.ValidationMessageFor(a => a.aracModel)
+                <br />
+                <br />
+                @Html.DropDownListFor(a => a.aracYakitTipi, new List<SelectListItem> {new SelectListItem { Text = "Dizel"},
+                new SelectListItem { Text = "Benzin"}}, "Yakıt Tipini Seçiniz",
+                new { @id = "txtAracYakitiTipi", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+                @Html.ValidationMessageFor(a => a.aracYakitTipi)
+                <br />
+                <br />
+                @Html.DropDownListFor(a => a.aracRenk, new List<SelectListItem> {new SelectListItem { Text = "Mavi"},
+                new SelectListItem { Text = "Yeşil"}, new SelectListItem { Text = "Beyaz"}, 
+                new SelectListItem { Text = "Siyah"}, new SelectListItem { Text = "Sarı"}, 
+                new SelectListItem { Text = "Kırmızı"}, new SelectListItem { Text = "Turuncu"}, 
+                new SelectListItem { Text = "Mor"}, new SelectListItem { Text = "Gri"}, 
+                new SelectListItem { Text = "Bordo"}}, "Renk Seçiniz",
+                new { @id = "txtAracRenk", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+                @Html.ValidationMessageFor(a => a.aracRenk)
+                <br />
+                <br />
+                @Html.DropDownListFor(a => a.aracVitesTipi, new List<SelectListItem> {new SelectListItem { Text = "Otomatik"},
+                new SelectListItem { Text = "Yarı Otomatik"}, new SelectListItem { Text = "Düz"}}, "Vites Tipini Seçiniz",
+                new { @id = "txtAracVitesTipi", @style = "width: 248px; height: 30px; border: 1px solid #ccc;" })
+                @Html.ValidationMessageFor(a => a.aracVitesTipi)
+                <br />
+                <input type="submit" value="Kaydet" class="btnStyle">
+            }
+        </div>
+    </div>
+</div>
+

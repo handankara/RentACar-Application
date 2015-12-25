@@ -18,21 +18,6 @@ namespace RentACarProject.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult Yeni(ViewModel.RezervasyonVM model/*, int aracId*/)//veritabanına kayıt işlemi
-        {
-            model.Rec.uyeID = Convert.ToInt32(Session["sessionUyeID"]);//Sessiondan aldık. 
-            model.Rec.aracID = Convert.ToInt32(Session["sessionAracID"]);//Sessiondan aldık. 
-
-            RentACarDBEntities db = new RentACarDBEntities();//tarih,saat değerlerini Yeni actiondan alıyoruz.
-            db.Rezervasyonlar.Add(model.Rec);
-            db.SaveChanges();
-
-            //return View("RezervasyonBasarili", model);
-           
-            return RedirectToAction("Index", "FilterAndList");
-        }
-
         public ActionResult Yeni(int aracId)//bu action çalıştırdığımızda Yeni View daki alanları dolduracak kısım
         {
             ViewModel.RezervasyonVM model = new ViewModel.RezervasyonVM();
@@ -60,6 +45,18 @@ namespace RentACarProject.Controllers
         }
 
 
+        [HttpPost]
+        public ActionResult Yeni(ViewModel.RezervasyonVM model)//veritabanına kayıt işlemi
+        {
+            model.Rec.uyeID = Convert.ToInt32(Session["sessionUyeID"]);//Sessiondan aldık. 
+            model.Rec.aracID = Convert.ToInt32(Session["sessionAracID"]);//Sessiondan aldık. 
+
+            RentACarDBEntities db = new RentACarDBEntities();//tarih,saat değerlerini Yeni actiondan alıyoruz.
+            db.Rezervasyonlar.Add(model.Rec);
+            db.SaveChanges();
+
+            return RedirectToAction("Index", "FilterAndList");
+        }
 
     }
 }

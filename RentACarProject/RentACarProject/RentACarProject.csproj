@@ -122,17 +122,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\AraclarController.cs" />
+    <Compile Include="Controllers\AracEkleController.cs" />
     <Compile Include="Controllers\AracListeleController.cs" />
     <Compile Include="Controllers\FilterAndListController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\RentACarEntities.cs" />
     <Compile Include="Controllers\RezervasyonController.cs" />
     <Compile Include="Controllers\SharedController.cs" />
     <Compile Include="Controllers\SubelerController.cs" />
     <Compile Include="Controllers\UyeEkleController.cs" />
-    <Compile Include="Controllers\UyelikEkraniController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -183,6 +181,7 @@
     <Content Include="Content\img\kirmizi-arac.jpg" />
     <Content Include="Content\img\renkli-arac.jpg" />
     <Content Include="Content\img\sari-araba.jpg" />
+    <Content Include="Content\img\siyah.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -205,9 +204,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\UyelikEkrani\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Models\ModelUyelik.edmx">
@@ -234,9 +230,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Araclar\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\AracListele\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -253,6 +246,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\UyeEkle\UyeEkle.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\AracEkle\AracEkle.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

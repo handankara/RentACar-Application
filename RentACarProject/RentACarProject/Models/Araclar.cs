@@ -11,7 +11,8 @@ namespace RentACarProject.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;//validation iþlemleri için eklendi.
+
     public partial class Araclar
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -21,10 +22,25 @@ namespace RentACarProject.Models
         }
     
         public int aracID { get; set; }
+
+        [Required(ErrorMessage = "Lütfen araç markasýný giriniz.")] //gerekli kýsým
+        [Display(Name = "Araç Marka")]//Bu ekranda görünen isim
         public string aracMarka { get; set; }
+
+        [Required(ErrorMessage = "Lütfen araç modelini giriniz.")] //gerekli kýsým
+        [Display(Name = "Araç Model")]//Bu ekranda görünen isim
         public string aracModel { get; set; }
+
+        [Required(ErrorMessage = "Lütfen araç yakýt tipini giriniz.")] //gerekli kýsým
+        [Display(Name = "Yakýt Tipi")]//Bu ekranda görünen isim
         public string aracYakitTipi { get; set; }
+
+        [Required(ErrorMessage = "Lütfen araç rengini giriniz.")] //gerekli kýsým
+        [Display(Name = "Renk")]//Bu ekranda görünen isim
         public string aracRenk { get; set; }
+
+        [Required(ErrorMessage = "Lütfen araç vites tipi giriniz.")] //gerekli kýsým
+        [Display(Name = "Vites Tipi")]//Bu ekranda görünen isim
         public string aracVitesTipi { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -11,14 +11,28 @@ namespace RentACarProject.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;//validation iþlemleri için eklendi.
+
     public partial class Rezervasyonlar
     {
         public int rezID { get; set; }
+
+        [Required(ErrorMessage = "Lütfen rezervasyon tarihini giriniz.")] //gerekli kýsým
+        [Display(Name = "Alýþ Tarihi")]//Bu ekranda görünen isim
         public Nullable<System.DateTime> rezTarih { get; set; }
+
+        [Required(ErrorMessage = "Lütfen rezervasyon saatini giriniz.")] //gerekli kýsým
+        [Display(Name = "Alýþ Saati")]//Bu ekranda görünen isim
         public Nullable<System.TimeSpan> rezSaat { get; set; }
+
+        [Required(ErrorMessage = "Lütfen teslim tarihini giriniz.")] //gerekli kýsým
+        [Display(Name = "Teslim Tarihi")]//Bu ekranda görünen isim
         public Nullable<System.DateTime> rezTeslimTarih { get; set; }
+
+        [Required(ErrorMessage = "Lütfen teslim saatini giriniz.")] //gerekli kýsým
+        [Display(Name = "Teslim Saati")]//Bu ekranda görünen isim
         public Nullable<System.TimeSpan> rezTeslimSaat { get; set; }
+
         public Nullable<int> uyeID { get; set; }
         public Nullable<int> aracID { get; set; }
     

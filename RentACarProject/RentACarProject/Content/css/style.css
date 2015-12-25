@@ -77,7 +77,6 @@ header {
     height: 280px;
     margin-top: 15px;/*yukarıdan boşluk verdik.*/
     float: left;
-    /*background-image: url(/Content/img/cars.jpg);*/
     background-size: cover;
    
 }
@@ -87,7 +86,7 @@ header {
     height: 500px;
     float: left;
     margin-top: 15px; /*yukarıdan bu kadar boşluk verdik*/
-   
+   background-color: #fff;
 }
 
 .login-giris {
@@ -143,7 +142,6 @@ header {
 .arac-ozellikleri {
         width: 210px;
         height: 200px;
-      /* padding: 20px;*/ 
         color: #555;
         float: left;
         margin: 20px;
@@ -161,9 +159,6 @@ header {
                font-family: Center;
                padding-left: 15px;
                float: left;
-               color: #fff;
-               font-size: 16px;
-               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                background-color: #0099CC;
             }
 
@@ -179,8 +174,6 @@ header {
             width: 300px;
             height: auto;
             float: left;
-           /* margin: 15px;*/
-        
         }
 
             .rezeryasyon-ekranı .ust {
@@ -403,7 +396,7 @@ tr {
     width: 650px;
     height: 500px;
     float: right;
-    margin-top: 15px; /*yukarıdan bu kadar boşluk verdik*/
+    margin-top: 15px; 
     background-color: #fff;
     overflow-y: scroll;/*sayfa uzunsa kaydırma çubuğu çıkması için kullanılır.*/ 
 }
@@ -421,7 +414,7 @@ footer {
     text-align: center;
     color: #555;
     float: left;
-    margin-top: 15px;/*yukarıdan bu kadar boşluk verdik*/
+    margin-top: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #fff;
 }
