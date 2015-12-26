@@ -10,32 +10,15 @@ namespace RentACarProject.Controllers
 {
     public class RezervasyonController : Controller
     {
-        //
+        
         // GET: /Rezervasyon/
-
+/*
         public ActionResult Index()
         {
             return View();
         }
+*/
 
-<<<<<<< HEAD
-=======
-        [HttpPost]
-        public ActionResult Yeni(ViewModel.RezervasyonVM model)//veritabanına kayıt işlemi
-        {
-            model.Rec.uyeID = Convert.ToInt32(Session["sessionUyeID"]);//Sessiondan aldık. 
-            model.Rec.aracID = Convert.ToInt32(Session["sessionAracID"]);//Sessiondan aldık. 
-
-            RentACarDBEntities db = new RentACarDBEntities();//tarih,saat değerlerini Yeni View dan alıyoruz.
-            db.Rezervasyonlar.Add(model.Rec);
-            db.SaveChanges();
-
-            //return View("RezervasyonBasarili", model);
-           
-            return RedirectToAction("Index", "FilterAndList");
-        }
-
->>>>>>> origin/master
         public ActionResult Yeni(int aracId)//bu action çalıştırdığımızda Yeni View daki alanları dolduracak kısım
         {
             ViewModel.RezervasyonVM model = new ViewModel.RezervasyonVM();
@@ -63,7 +46,7 @@ namespace RentACarProject.Controllers
         }
 
 
-        [HttpPost]
+        [HttpPost, ValidateAntiForgeryToken]
         public ActionResult Yeni(ViewModel.RezervasyonVM model)//veritabanına kayıt işlemi
         {
             model.Rec.uyeID = Convert.ToInt32(Session["sessionUyeID"]);//Sessiondan aldık. 
